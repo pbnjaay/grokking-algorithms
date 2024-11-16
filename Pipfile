@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 qrcode = {extras = ["pil"], version = "*"}
 termcolor = "*"
+requests = "*"
 
 [dev-packages]
 
