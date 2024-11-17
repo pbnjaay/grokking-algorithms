@@ -7,6 +7,7 @@ name = "pypi"
 qrcode = {extras = ["pil"], version = "*"}
 termcolor = "*"
 requests = "*"
+structlog = "*"
 
 [dev-packages]
 

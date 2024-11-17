@@ -1,0 +1,35 @@
+2024-11-16 20:32:26,011 [INFO] Response: 200 https://jsonplaceholder.typicode.com/posts/1
+2024-11-16 20:32:50,541 [INFO] Response: 404 https://jsonplaceholder.typicode.com/post/1
+2024-11-16 20:44:54,251 [INFO] SAAR_ASSURANCE - Response: 404 https://jsonplaceholder.typicode.com/post/1
+2024-11-16 20:45:30,584 [ERROR] SAAR_ASSURANCE - GET request failed: HTTPSConnectionPool(host='jsonplaceholder.typicode.com', port=443): Max retries exceeded with url: /posts/1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000027AE6C261A0>: Failed to resolve 'jsonplaceholder.typicode.com' ([Errno 11001] getaddrinfo failed)"))
+2024-11-16 20:58:02,362 [DEBUG] SAAR_ASSURANCE - Request: GET https://jsonplaceholder.typicode.com/posts/1
+2024-11-16 20:58:02,362 [DEBUG] SAAR_ASSURANCE - Headers: {}
+2024-11-16 20:58:02,362 [DEBUG] SAAR_ASSURANCE - Params: None
+2024-11-16 20:58:02,362 [DEBUG] SAAR_ASSURANCE - Data: None
+2024-11-16 20:58:02,362 [DEBUG] SAAR_ASSURANCE - JSON: None
+2024-11-16 20:58:02,362 [DEBUG] Starting new HTTPS connection (1): jsonplaceholder.typicode.com:443
+2024-11-16 20:58:02,590 [DEBUG] https://jsonplaceholder.typicode.com:443 "GET /posts/1 HTTP/11" 200 None
+2024-11-16 20:58:02,590 [INFO] SAAR_ASSURANCE - Response: 200 https://jsonplaceholder.typicode.com/posts/1
+2024-11-16 20:58:02,590 [DEBUG] SAAR_ASSURANCE - Response Body: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-11-16 21:44:36,835 [INFO] SAAR_ASSURANCE - Response: 200 https://jsonplaceholder.typicode.com/posts/1
+2024-11-16 21:44:53,616 [INFO] SAAR_ASSURANCE - Response: 404 https://jsonplaceholder.typicode.com/post/1
+2024-11-16 21:44:53,616 [ERROR] Erreur API : Not Found: {}
+2024-11-16 22:16:03,459 [INFO] SAAR_ASSURANCE - Response: 404 https://jsonplaceholder.typicode.com/post/1
+2024-11-16 22:16:03,459 [ERROR] SAAR_ASSURANCE - GET request failed: Not Found: {}
+2024-11-16 22:16:03,459 [ERROR] Erreur API : SAAR_ASSURANCE - GET request failed: Not Found: {}
+2024-11-16 22:16:55,949 [DEBUG] SAAR_ASSURANCE - Request: GET https://jsonplaceholder.typicode.com/post/1
+2024-11-16 22:16:55,949 [DEBUG] SAAR_ASSURANCE - Headers: None
+2024-11-16 22:16:55,949 [DEBUG] SAAR_ASSURANCE - Params: None
+2024-11-16 22:16:55,957 [DEBUG] SAAR_ASSURANCE - Data: None
+2024-11-16 22:16:55,957 [DEBUG] SAAR_ASSURANCE - JSON: None
+2024-11-16 22:16:55,959 [DEBUG] Starting new HTTPS connection (1): jsonplaceholder.typicode.com:443
+2024-11-16 22:16:56,159 [DEBUG] https://jsonplaceholder.typicode.com:443 "GET /post/1 HTTP/11" 404 2
+2024-11-16 22:16:56,159 [INFO] SAAR_ASSURANCE - Response: 404 https://jsonplaceholder.typicode.com/post/1
+2024-11-16 22:16:56,159 [DEBUG] SAAR_ASSURANCE - Response Body: {}
+2024-11-16 22:16:56,165 [ERROR] SAAR_ASSURANCE - GET request failed: Not Found: {}
+2024-11-16 22:16:56,165 [ERROR] Erreur API : SAAR_ASSURANCE - GET request failed: Not Found: {}
