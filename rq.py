@@ -45,7 +45,7 @@ class Result:
 
 
 class ApiService:
-    def __init__(self, base_url, service_name, headers=None, timeout=10, refresh_token_callback=None, token_type='Bearer'):
+    def __init__(self, base_url, service_name, logger, headers=None, timeout=10, refresh_token_callback=None, token_type='Bearer'):
         """
         Initialise le service API.
 
@@ -63,7 +63,7 @@ class ApiService:
         self.service_name = service_name
         self.refresh_token_callback = refresh_token_callback
         self.token_type = token_type
-        self.logger = structlog.get_logger('wz-pg')
+        self.logger = logger
 
     def _set_auth_token(self, token):
         """
@@ -209,6 +209,9 @@ class ApiService:
                 f"{self.service_name} - {method} request failed: {e}") from e
 
 
+logger = structlog.get_logger('wz-log')
+
+
 def mock_refresh_token():
     return "new_access_token"
 
@@ -218,7 +221,8 @@ try:
     service = ApiService(
         base_url,
         service_name='SAAR_ASSURANCE',
-        refresh_token_callback=mock_refresh_token
+        refresh_token_callback=mock_refresh_token,
+        logger=logger
     )
     res = service.get('/posts/1')
     print(res.data)
