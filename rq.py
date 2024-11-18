@@ -55,6 +55,7 @@ class ApiService:
         :param timeout: Délai d'expiration par défaut pour les requêtes.
         :param refresh_token_callback: Fonction pour rafraîchir le token.
         :param token_type: Le type de token d'auhentification
+        :param logger: Logger structlog.
         """
         self.base_url = base_url.rstrip('/')
         self.session = requests.Session()
